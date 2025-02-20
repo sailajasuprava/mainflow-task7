@@ -5,7 +5,7 @@ const blogSchema = new mongoose.Schema(
     title: {
       type: String,
       required: [true, "Title is required"],
-      minlength: [5, "Title must be at least 5 characters long"],
+      minlength: [3, "Title must be at least 3 characters long"],
       maxlength: [100, "Title must be less than 100 characters long"],
     },
     content: {
